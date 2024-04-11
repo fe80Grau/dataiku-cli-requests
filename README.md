@@ -11,7 +11,9 @@ A small Python script to call builds for Dataiku datasets via the command line i
 
 ## Installation
 
-`pip install dataiku-cli-requests`
+```
+pip install dataiku-cli-requests
+```
 
 ## Getting started
 
@@ -28,15 +30,23 @@ For security reasons, it's recommended to use an environment variable to pass yo
 
 Setting the Environment Variable
 On Linux/macOS:
-```export DATAIKU_PASSWORD="yourpasswordhere"```
+```
+export DATAIKU_PASSWORD="yourpasswordhere"
+```
 
 On Windows (Command Prompt):
-```set DATAIKU_PASSWORD=yourpasswordhere```
+```
+set DATAIKU_PASSWORD=yourpasswordhere
+```
 
 On Windows (PowerShell):
-```$env:DATAIKU_PASSWORD="yourpasswordhere"```
+```
+$env:DATAIKU_PASSWORD="yourpasswordhere"
+```
 
 After setting the environment variable, you can omit the `--password` argument when using the script. If both the environment variable and the `--password` argument are provided, the script will use the value provided as the argument.
 
 ## Example
-```dataiku-cli-requests --host https://dataiku.example.com:11000/ --user test --password p4$$w0rd --project PROJECTNAME --dataset mydataset```
+```
+dataiku-cli-requests --host https://dataiku.example.com:11000/ --user test --password p4$$w0rd --project PROJECTNAME --dataset mydataset
+```
